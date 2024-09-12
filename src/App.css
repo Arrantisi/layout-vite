@@ -209,7 +209,19 @@ img {
 }
 
 .button__icon {
+  display: flex;
+  justify-content: center;
   margin-left: var(--mb-0-5);
+  transform: rotate(45deg);
+  transition: .3s;
+}
+
+.button:hover .button__icon {
+  transform: rotate(90deg);
+}
+
+.button:active .button__icon {
+  transform: translateX(1rem) rotate(90deg);
 }
 
 .button--flex {
