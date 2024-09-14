@@ -14,7 +14,6 @@ export const ColorTheme = ({ children }) => {
     }, [theme])
 
     const toggleTheme = () => {
-        console.log("touch")
         setTheme((prev) => (prev === "light" ? 'dark' : 'light'))
     }
 

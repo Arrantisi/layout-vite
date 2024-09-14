@@ -14,7 +14,7 @@
     --secondary: hsl(240 4.8% 13%);
     --button-color: hsl(240 4.8% 3%);
     --button-hover-color: hsl(240, 3%, 10%);
-    --text-color: hsl(255 9.2% 30%);
+    --text-color: hsl(255 9.2% 20%);
     --border-color: hsl(240 5.9% 7%);
     --ring: hsl(240 5.9% 7%);
 
@@ -193,21 +193,13 @@ img {
     background-color: var(--button-hover-color);
 }
 
-.button__icon {
+.button-icon {
     display: flex;
     justify-content: center;
     margin-left: var(--mb-0-5);
-    transform: rotate(45deg);
     transition: .3s;
 }
 
-.button:hover .button__icon {
-    transform: rotate(90deg);
-}
-
-.button:active .button__icon {
-    transform: translateX(1rem) rotate(90deg);
-}
 
 .button--flex {
     display: inline-flex;
