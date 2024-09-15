@@ -7,16 +7,19 @@
     --radius: 0.5rem;
 
     /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-
+    /*Color mode HSL(hue, saturati on, lightness)*/
+    --body-color: hsl(0 0% 95%);
     --background: hsl(0 0% 100%);
+    --background-secondary: hsl(0 0% 97%);
     --primary: hsl(240 5.9% 10%);
     --secondary: hsl(240 4.8% 13%);
     --button-color: hsl(240 4.8% 3%);
     --button-hover-color: hsl(240, 3%, 10%);
-    --text-color: hsl(255 9.2% 20%);
+    --text-color: hsl(255 9.2% 70%);
     --border-color: hsl(240 5.9% 7%);
     --ring: hsl(240 5.9% 7%);
+
+    --image-hexa: url("./assets/Hexagon.svg");
 
     --succer-color: hsl(142.1 76.2% 36.3%);
     --link-color: hsl(221.2 83.2% 53.3%);
@@ -66,7 +69,9 @@
 }
 
 [data-theme="dark"] {
-    --background: hsl(240 5.9% 3%);
+    --body-color: hsl(240 5.9% 2%);
+    --background: hsl(240 5.9% 4%);
+    --background-secondary: hsl(240 5.9% 15%);
     --primary: hsl(0 0% 100%);
     --secondary: hsl(240 4.8% 80%);
     --button-color: hsl(240 4.8% 95.9%);
@@ -80,6 +85,7 @@
     --error-color: hsl(0 72.2% 50.6%);
     --warning-color: hsl(47.9 95.8% 53.1%);
 
+    --image-hexa: url("./assets/HexagonLight.svg");
 }
 
 /* Responsive typography */
@@ -116,7 +122,7 @@ textarea {
 
 body {
     background-color: var(--background);
-    color: var(--foreground);
+    color: var(--primary);
 }
 
 h1,
@@ -184,7 +190,7 @@ img {
     display: inline-block;
     background-color: var(--button-color);
     color: var(--background);
-    padding: 1.25rem 2rem;
+    padding: 1rem 1rem;
     border-radius: var(--radius);
     font-weight: var(--font-medium);
 }
@@ -193,17 +199,16 @@ img {
     background-color: var(--button-hover-color);
 }
 
-.button-icon {
-    display: flex;
-    justify-content: center;
-    margin-left: var(--mb-0-5);
-    transition: .3s;
-}
-
-
 .button--flex {
     display: inline-flex;
     align-items: center;
+}
+
+/*=============== react-icons ===============*/
+.react-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*=============== BREAKPOINTS ===============*/
